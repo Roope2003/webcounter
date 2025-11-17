@@ -19,3 +19,9 @@ Resetting the counter sets it back to zero
     Go To  ${HOME_URL}
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
+
+Setting the counter to a specific value
+    Go To  ${HOME_URL}
+    Input Text  name=value  5
+    Click Button  Aseta arvo
+    Page Should Contain  nappia painettu 5 kertaa
